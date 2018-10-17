@@ -2,7 +2,7 @@ FROM debian:stretch
 
 RUN set -xe \
     && apt-get update \
-    && apt-get install transmission-daemon
+    && apt-get install -y transmission-daemon
 
 VOLUME ["/root/Downloads", "/etc/transmission-daemon"]
 
