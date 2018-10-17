@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 RUN set -xe \
-    && apk add --no-cache transmission-daemon
+    && apt-get install transmission-daemon
 
 VOLUME ["/root/Downloads", "/etc/transmission-daemon"]
 
