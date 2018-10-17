@@ -1,5 +1,4 @@
-FROM alpine:edge
-MAINTAINER Nemo Alex <zhhjchina@gmail.com>
+FROM debian:jessie
 
 RUN set -xe \
     && apk add --no-cache transmission-daemon
