@@ -1,6 +1,7 @@
-FROM debian:jessie
+FROM debian:stretch
 
 RUN set -xe \
+    && apt-get update \
     && apt-get install transmission-daemon
 
 VOLUME ["/root/Downloads", "/etc/transmission-daemon"]
