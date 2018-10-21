@@ -2,6 +2,7 @@ FROM debian:stretch
 
 RUN set -xe \
     && apt-get update \
+    && apt-get install software-properties-common \
     && apt-add-repository non-free \
     && apt-get update \
     && apt-get install -y transmission-daemon unrar
