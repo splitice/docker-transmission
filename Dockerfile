@@ -2,7 +2,7 @@ FROM debian:stretch
 
 RUN set -xe \
     && apt-get update \
-    && apt-get install -y transmission-daemon
+    && apt-get install -y transmission-daemon unrar
 
 VOLUME ["/root/Downloads", "/etc/transmission-daemon"]
 
