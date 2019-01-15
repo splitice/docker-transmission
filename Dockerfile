@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 
 RUN set -xe \
     && apt-get update \
