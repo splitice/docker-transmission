@@ -5,7 +5,7 @@ RUN set -xe \
     && apt-get install -y software-properties-common \
     && apt-add-repository non-free \
     && apt-get update \
-    && apt-get install -y transmission-daemon unrar
+    && apt-get install -y transmission-daemon unrar curl
 
 VOLUME ["/root/Downloads", "/etc/transmission-daemon"]
 
